@@ -4,27 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <!-- Top Bar -->
     <div class="top-bar">
-      <div class="top-bar-content">
+      <div class="container top-bar-content">
         <div class="contact-info">
-          <span
-            ><i class="fa-solid fa-phone"></i> 087 245 0049 / 01 8137811</span
-          >
+          <span><i class="fa-solid fa-phone"></i> 087 245 0049 / 01 8137811</span>
           <span class="divider">|</span>
           <span><i class="fa-solid fa-envelope"></i> contact@sample.ie</span>
           <span class="divider">|</span>
-          <span
-            ><i class="fa-solid fa-clock"></i> Mon-Thu: 8:00 am to 9:00 pm</span
-          >
+          <span><i class="fa-solid fa-clock"></i> Mon-Thu: 8:00 am to 9:00 pm</span>
         </div>
         <div class="social-icons">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -36,23 +32,22 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="nav-content">
+      <div class="container nav-content">
         <div class="logo">
           <img src="assets/images/logo.png" alt="Logo" />
         </div>
-
         <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
         <label for="menu-toggle" class="menu-button">
           <span class="hamburger"></span>
         </label>
-
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Order Company</a></li>
-          <li><a href="#">Apply for TAX Rebate</a></li>
+          <li><a href="#">Apply for Tax Rebate</a></li>
           <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -61,7 +56,7 @@
     <div class="banner">
       <div class="banner-container">
         <div class="content">
-          <h1>Take The Right Step For Your Business</h1>
+          <h1>Take The Right Step <br />For Your Business</h1>
           <p>
             TAX Associate is a leading consultancy firm that provides simple,
             effective company registration, and accounting solutions to
@@ -86,12 +81,14 @@
             </div>
             <div class="checkbox-group">
               <input type="checkbox" id="terms" />
-              <label for="terms"
-                >I have read & agreed to the <a href="#">authorisation</a> and
-                the <a href="#">terms & conditions</a>.</label
-              >
+              <label for="terms">
+                I have read & agreed to the authorisation <br />
+                and the <a href="#">terms & conditions</a>.
+              </label>
             </div>
-            <button type="submit">Apply Now</button>
+            <button type="submit">
+              Apply <i class="fa fa-arrow-right"></i>
+            </button>
           </form>
         </div>
       </div>
